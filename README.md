@@ -1,1 +1,108 @@
-# -DevCommeLesPros-2021-Exo0
+# DevCommeLesPros-2021-Exo0
+
+Modèle de départ servant à la mise en place des outils de travail pour ce cours.
+
+<!-- TOC depthfrom:2 -->
+
+- [Objectif](#objectif)
+- [Installation de Visual Studio Code pour le développement C et C++](#installation-de-visual-studio-code-pour-le-d%C3%A9veloppement-c-et-c)
+    - [Instructions pour Windows](#instructions-pour-windows)
+    - [Instructions pour macOS](#instructions-pour-macos)
+    - [Instructions pour Linux](#instructions-pour-linux)
+- [GitHub et votre premier dépôt](#github-et-votre-premier-d%C3%A9p%C3%B4t)
+    - [Instructions pour tous](#instructions-pour-tous)
+- [Évaluation](#%C3%A9valuation)
+
+<!-- /TOC -->
+
+## Objectif
+
+Ces instructions vont vous servir à installer et configurer [Visual Studio Code](https://code.visualstudio.com).
+Code est un programme qui sert d'environnement de dévelopement.
+C'est une collection d'outils propres à la programmation.
+Principalement, c'est un navigateur de fichiers, un éditeur de texte et une interface de débogage et, accessoirement, encore bien d'autres choses.
+Code pourra vous servir ultérieurement dans le contexte d'autres cours de programmation.
+
+Vous aurez aussi à créer un compte sur [GitHub](https://github.com), le service d'hébergement de dépôts de code que nous utiliserons pour ce cours.
+Une fois fait, vous procéderez à créer votre premier dépôt.
+
+## Installation de Visual Studio Code pour le développement C et C++
+
+Visual Studio Code est disponible pour tout les systèmes d'exploitation majeurs et son interface est la même partout.
+Cette uniformité est utile dans le contexte d'enseignement mais je veux que vous puissiez tous tout de même utiliser l'ordinateur que vous avez déjà.
+
+Par contre, Code est un environnement de programmation qui est au départ indépendant du langage de programmation utilisé et ne peut compiler un programme en C par soi-même.
+On doit donc aussi installer un compilateur (comme `gcc` avec lequel vous êtes déjà familier) et Code y fera appel.
+L'installation du compilateur diffère dépendamment de votre système d'exploitation.
+Suivez les instructions qui correspondent à votre situation :
+
+### Instructions pour Windows
+
+Pour travailler sous Windows, je conseille d'installer [Windows Subystem for Linux](https://fr.wikipedia.org/wiki/Windows_Subsystem_for_Linux).
+En mot très simple, WSL est une machine virtuelle qui vous donnera un vue de vos fichiers sous Windows à travers une lunette Linux.
+WSL vous permet donc de compiler et déboguer vos programmes avec le même `gcc` que l'on retrouve sur les ordinateurs de l'université.
+C'est d'ailleurs avec ce compilateur que je compilerai moi-même vos programmes.
+
+Instructions à suivre : https://docs.microsoft.com/en-us/windows/wsl/install-win10#manual-installation-steps. (Parmi les trois systèmes d'exploitations, ce sont les plus lourdes mais je crois qu'avoir une machine virtuelle Linux vous sera bénéfique.)
+
+### Instructions pour macOS
+
+Le compilateur C, C++ (et autres) d'Apple est AppleClang qui est une [fourche](https://fr.wikipedia.org/wiki/Fork_(d%C3%A9veloppement_logiciel)) de [Clang](https://fr.wikipedia.org/wiki/Clang).
+Clang est un compilateur qui se garde compatible avec gcc.
+AppleClang est installé avec les [Command Line Tools for Xcode](https://download.developer.apple.com/Developer_Tools/Command_Line_Tools_for_Xcode_12.2/Command_Line_Tools_for_Xcode_12.2.dmg)
+
+Instructions à suivre : https://code.visualstudio.com/docs/cpp/config-clang-mac.
+
+### Instructions pour Linux
+
+C'est la configuration la plus facile.
+Il n'y a qu'à installer le compilateur et débogueur s'ils n'y sont pas déjà.
+
+Instructions à suivre : https://code.visualstudio.com/docs/cpp/config-linux.
+
+## GitHub et votre premier dépôt
+
+Vous pouvez créer un compte avec votre adresse mail unversitaire mais ce n'est pas obligatoire.
+Vous aurez évidement le loisir de créer d'autres comptes plus tard avec un identité autre que votre «identité universitaire».
+Fait amusant : c'est ce compte qui vous suivra peut-être le plus longtemps au cours de votre carrière...
+Vous avez déjà un compte GitHub ? Tant mieux mais je devrai évidement savoir qui se cache derrière ce pseudo au moment de vous évaluer. S'il n'est pas évident, signalez-moi quel est votre pseudo.
+
+Pour vous faciliter la vie, je vous conseille de créer une [clé SSH](https://en.wikipedia.org/wiki/Ssh-keygen) qui servira à vous authentifier automatiquement avec ce service et vous évitera d'avoir à trop répétitivement tapper votre mot de passe.
+Une clé SSH est une clé de chiffrement asymétrique.
+Elle est donc divisée en deux parties, une publique et une privée.
+GitHub aura besoin de votre clé publique pour savoir vous reconnaître.
+
+Vous aurez à communiquer fréquemment avec GitHub lors de vos exercices.
+Pour automatiser le processus d'authentification avec GitHub, on utilise un agent.
+[ssh-agent](https://fr.wikipedia.org/wiki/Ssh-agent) (ou [Pageant](https://en.wikipedia.org/wiki/PuTTY) pour Windows) est un outil qui reconnaît les serveurs auxquels on s'adresse et nous authentifie automatiquement.
+
+Toutes ces instructions ont leur version propre à votre système d'exploitation.
+Chaque lien d'aide GitHub le reconnaîtra automatiquement.
+
+### Instructions pour tous
+
+1. Créez un compte GitHub.
+    - http://github.com/join
+1. Créez une clé SSH, ajoutez-la au `ssh-agent` et notifiez GitHub.
+    - Suivez ces instructions pour créer les clés publique et privée et les ajouter à un agent : https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent.
+    - Suivez ces instructions-ci pour partager la clé publique avec GitHub : https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account.
+1. Créez votre propre copie de [ce dépôt](https://github.com/thierryseegers/DevCommeLesPros-2021-Exo0) sur http://github.com en l'utilisant comme modèle.
+    - Suivez ces instructions: https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template.
+    - Choisissez l'option `Private` à l'étape 5.
+    - Attention : il ne s'agit pas de créer un tout nouveau dépôt ! Pour tout les exercices, celui-ci inclus, vous utiliserez mes dépôts comme point de départ avec leurs fichiers.
+1. Ajoutez le professeur comme collaborateur à votre dépôt.
+    - Suivez ces instructions: https://help.github.com/en/github/setting-up-and-managing-your-github-user-account/inviting-collaborators-to-a-personal-repository
+        - Nom d'utilisateur à ajouter: `thierryseegers`.
+1. Clonez votre dépôt vers votre espace de travail local.
+    - Suivez ces instructions: https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository
+    - Attention à ne pas cloner https://github.com/thierryseegers/DevCommeLesPros-2021-Exo0 mais bien votre dépôt nouvellement créé.
+1. Lancez Visual Studio Code.
+    - À l'invite de commandes:
+        - `$ cd [nom de votre dépôt]`
+        - `$ code .`
+    - Ou alors, lancez Code par soi-même et ouvrez le dossier ou se trouve le dépôt cloné.
+1. Vous devriez voir ce fichier, `README.md`, dans sa forme «[markdown](https://fr.wikipedia.org/wiki/Markdown)».
+
+## Évaluation
+
+Je m'attends à recevoir une invitation à votre dépôt avant la date et l'heure donnée en cours.
