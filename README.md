@@ -34,16 +34,19 @@ Cette uniformité est utile dans le contexte d'enseignement mais je veux que vou
 Par contre, Code est un environnement de programmation qui est au départ indépendant du langage de programmation utilisé et ne peut compiler un programme en C par soi-même.
 On doit donc aussi installer un compilateur (comme `gcc` avec lequel vous êtes déjà familier) et Code y fera appel.
 L'installation du compilateur diffère dépendamment de votre système d'exploitation.
+
+Personnellement, je compile et teste vos programmes sous Debian (la  distribution Linux que l'on retrouve sur les ordinateurs de l'université) et le compilateur `gcc`.
+
 Suivez les instructions qui correspondent à votre situation :
 
 ### Instructions pour Windows
 
 Pour travailler sous Windows, je conseille d'installer [Windows Subystem for Linux](https://fr.wikipedia.org/wiki/Windows_Subsystem_for_Linux).
-En mot très simple, WSL est une machine virtuelle qui vous donnera un vue de vos fichiers sous Windows à travers une lunette Linux.
+En mots très simples, WSL est une machine virtuelle qui vous donnera une vue de vos fichiers sous Windows à travers une lunette Linux.
+On peut naviguer ses fichiers et lancer des programmes propres à Linux à l'invite de commandes UNIX classique.
 WSL vous permet donc de compiler et déboguer vos programmes avec le même `gcc` que l'on retrouve sur les ordinateurs de l'université.
-C'est d'ailleurs avec ce compilateur que je compilerai moi-même vos programmes.
 
-Instructions à suivre : https://docs.microsoft.com/en-us/windows/wsl/install-win10#manual-installation-steps. (Parmi les trois systèmes d'exploitations, ce sont les plus lourdes mais je crois qu'avoir une machine virtuelle Linux vous sera bénéfique.)
+Suivez ces instructions : https://docs.microsoft.com/en-us/windows/wsl/install-win10#manual-installation-steps. (Parmi les trois systèmes d'exploitations, ce sont les plus lourdes mais je crois qu'avoir une machine virtuelle Linux vous sera bénéfique.)
 
 ### Instructions pour macOS
 
@@ -51,21 +54,20 @@ Le compilateur C, C++ (et autres) d'Apple est AppleClang qui est une [fourche](h
 Clang est un compilateur qui se garde compatible avec gcc.
 AppleClang est installé avec les [Command Line Tools for Xcode](https://download.developer.apple.com/Developer_Tools/Command_Line_Tools_for_Xcode_12.2/Command_Line_Tools_for_Xcode_12.2.dmg)
 
-Instructions à suivre : https://code.visualstudio.com/docs/cpp/config-clang-mac.
+Suivez ces instructions : https://code.visualstudio.com/docs/cpp/config-clang-mac.
 
 ### Instructions pour Linux
 
 C'est la configuration la plus facile.
 Il n'y a qu'à installer le compilateur et débogueur s'ils n'y sont pas déjà.
 
-Instructions à suivre : https://code.visualstudio.com/docs/cpp/config-linux.
+Suivez ces instructions : https://code.visualstudio.com/docs/cpp/config-linux.
 
 ## GitHub et votre premier dépôt
 
-Vous pouvez créer un compte avec votre adresse mail unversitaire mais ce n'est pas obligatoire.
+Vous pouvez créer un compte avec votre adresse mail unversitaire mais vous pouvez utiliser l'adresse que vous voulez.
 Vous aurez évidement le loisir de créer d'autres comptes plus tard avec un identité autre que votre «identité universitaire».
-Fait amusant : c'est ce compte qui vous suivra peut-être le plus longtemps au cours de votre carrière...
-Vous avez déjà un compte GitHub ? Tant mieux mais je devrai évidement savoir qui se cache derrière ce pseudo au moment de vous évaluer. S'il n'est pas évident, signalez-moi quel est votre pseudo.
+Vous avez déjà un compte GitHub ? Tant mieux mais je devrai évidement savoir qui se cache derrière ce pseudo au moment de vous évaluer. S'il n'est pas évident, signalez-moi quel est votre pseudo par mail.
 
 Pour vous faciliter la vie, je vous conseille de créer une [clé SSH](https://en.wikipedia.org/wiki/Ssh-keygen) qui servira à vous authentifier automatiquement avec ce service et vous évitera d'avoir à trop répétitivement tapper votre mot de passe.
 Une clé SSH est une clé de chiffrement asymétrique.
@@ -78,31 +80,34 @@ Pour automatiser le processus d'authentification avec GitHub, on utilise un agen
 
 Toutes ces instructions ont leur version propre à votre système d'exploitation.
 Chaque lien d'aide GitHub le reconnaîtra automatiquement.
+Pour certains, les instructions pourront vous suggérer d'utiliser un client graphique vers GitHub, vous êtes libre de le faire mais dans un but d'uniformité, je ferai toujours référence à `git` par son interface d'invite de commandes.
 
 ### Instructions pour tous
 
 1. Créez un compte GitHub.
     - http://github.com/join
 1. Créez une clé SSH, ajoutez-la au `ssh-agent` et notifiez GitHub.
-    - Suivez ces instructions pour créer les clés publique et privée et les ajouter à un agent : https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent.
-    - Suivez ces instructions-ci pour partager la clé publique avec GitHub : https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account.
-1. Créez votre propre copie de [ce dépôt](https://github.com/thierryseegers/DevCommeLesPros-2021-Exo0) sur http://github.com en l'utilisant comme modèle.
-    - Suivez ces instructions: https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template.
-    - Choisissez l'option `Private` à l'étape 5.
-    - Attention : il ne s'agit pas de créer un tout nouveau dépôt ! Pour tout les exercices, celui-ci inclus, vous utiliserez mes dépôts comme point de départ avec leurs fichiers.
+    - Suivez ces instructions pour créer les clés publique et privée et les ajouter à un agent : https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent.
+    - Suivez ces instructions-ci pour partager la clé publique avec GitHub : https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account.
+1. Créez votre propre copie de [ce dépôt](https://github.com/thierryseegers/DevCommeLesPros-2021-Exo0) que vous lisez présentement en l'utilisant comme modèle.
+    - Suivez ces instructions : https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template.
+        - Vous pouvez gardez le même nom de dépôt que celui-ci.
+        - Choisissez l'option `Private` à l'étape 5.
+    - Attention : il ne s'agit pas de créer un tout nouveau dépôt ou de faire une [fourche](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo) ! Pour tout les exercices, celui-ci inclus, vous utiliserez mes dépôts comme point de départ avec leurs fichiers avec la fonctionalité «Use this template» («Utiliser ce modèle»).
 1. Ajoutez le professeur comme collaborateur à votre dépôt.
-    - Suivez ces instructions: https://help.github.com/en/github/setting-up-and-managing-your-github-user-account/inviting-collaborators-to-a-personal-repository
-        - Nom d'utilisateur à ajouter: `thierryseegers`.
+    - Suivez ces instructions : https://docs.github.com/en/free-pro-team@latest/github/setting-up-and-managing-your-github-user-account/inviting-collaborators-to-a-personal-repository
+        - Nom d'utilisateur à ajouter : `thierryseegers`.
 1. Clonez votre dépôt vers votre espace de travail local.
-    - Suivez ces instructions: https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository
-    - Attention à ne pas cloner https://github.com/thierryseegers/DevCommeLesPros-2021-Exo0 mais bien votre dépôt nouvellement créé.
+    - Suivez ces instructions : https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository
+        - À l'étape 3, choisissez «Use SSH».
+    - Attention à ne pas cloner https://github.com/thierryseegers/DevCommeLesPros-2021-Exo0 mais bien votre propre dépôt nouvellement créé.
 1. Lancez Visual Studio Code.
-    - À l'invite de commandes:
+    - À l'invite de commandes :
         - `$ cd [nom de votre dépôt]`
         - `$ code .`
-    - Ou alors, lancez Code par soi-même et ouvrez le dossier ou se trouve le dépôt cloné.
+    - Ou alors, lancez Code par soi-même et ouvrez le dossier où se trouve le dépôt cloné.
 1. Vous devriez voir ce fichier, `README.md`, dans sa forme «[markdown](https://fr.wikipedia.org/wiki/Markdown)».
 
 ## Évaluation
 
-Je m'attends à recevoir une invitation à votre dépôt avant la date et l'heure donnée en cours.
+Je m'attends à recevoir une invitation à votre dépôt avant l'échéance donnée en cours.
