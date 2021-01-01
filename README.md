@@ -85,6 +85,8 @@ Pour certains, les instructions pourront vous suggérer d'utiliser un client gra
 
 ### Instructions pour tous
 
+Pour toutes ces instructions, si vous travaillez sous Windows+WSL, suivez les instructions pour Linux et considérez le terminal WSL comme un terminal Linux.
+
 1. Créez un compte GitHub.
     - http://github.com/join
 1. Créez une clé SSH, ajoutez-la au `ssh-agent` et notifiez GitHub.
