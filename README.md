@@ -90,6 +90,8 @@ Pour certains, les instructions pourront vous suggérer d'utiliser un client gra
 1. Créez une clé SSH, ajoutez-la au `ssh-agent` et notifiez GitHub.
     - Suivez ces instructions pour créer les clés publique et privée et les ajouter à un agent : https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent.
     - Suivez ces instructions-ci pour partager la clé publique avec GitHub : https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account.
+    - Générez une clé par compte/ordinateur.
+    P. ex. si vous travaillerez de votre propre ordinateur et de votre compte universitaire, il vous faudra deux clés.
 1. Créez votre propre copie de [ce dépôt](https://github.com/thierryseegers/DevCommeLesPros-2021-Exo0) que vous lisez présentement en l'utilisant comme modèle.
     - Suivez ces instructions : https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template.
         - Vous pouvez gardez le même nom de dépôt que celui-ci.
