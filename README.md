@@ -77,6 +77,7 @@ GitHub aura besoin de votre clé publique pour savoir vous reconnaître.
 Vous aurez à communiquer fréquemment avec GitHub lors de vos exercices.
 Pour automatiser le processus d'authentification avec GitHub, on utilise un agent.
 [ssh-agent](https://fr.wikipedia.org/wiki/Ssh-agent) (ou [Pageant](https://en.wikipedia.org/wiki/PuTTY) pour Windows) est un outil qui reconnaît les serveurs auxquels on s'adresse et nous authentifie automatiquement.
+Cet agent doit être re-lancé si vous redémarrez votre ordinateur ou être configuré pour être lancé automatiquement dès sone démarrage.
 
 Toutes ces instructions ont leur version propre à votre système d'exploitation.
 Chaque lien d'aide GitHub le reconnaîtra automatiquement.
