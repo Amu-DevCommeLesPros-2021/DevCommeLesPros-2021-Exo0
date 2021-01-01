@@ -46,22 +46,22 @@ En mots très simples, WSL est une machine virtuelle qui vous donnera une vue de
 On peut naviguer ses fichiers et lancer des programmes propres à Linux à l'invite de commandes UNIX classique.
 WSL vous permet donc de compiler et déboguer vos programmes avec le même `gcc` que l'on retrouve sur les ordinateurs de l'université.
 
-Suivez ces instructions : https://docs.microsoft.com/en-us/windows/wsl/install-win10#manual-installation-steps. (Parmi les trois systèmes d'exploitations, ce sont les plus lourdes mais je crois qu'avoir une machine virtuelle Linux vous sera bénéfique.)
+Suivez ces instructions pour installer WSL, compilateur, débogueur, Visual Studio Code et l'extension `C/C++` : https://code.visualstudio.com/docs/cpp/config-wsl. (Parmi les trois systèmes d'exploitations, ce sont les plus lourdes mais je crois qu'avoir une machine virtuelle Linux vous sera bénéfique.)
 
 ### Instructions pour macOS
 
 Le compilateur C, C++ (et autres) d'Apple est AppleClang qui est une [fourche](https://fr.wikipedia.org/wiki/Fork_(d%C3%A9veloppement_logiciel)) de [Clang](https://fr.wikipedia.org/wiki/Clang).
 Clang est un compilateur qui se garde compatible avec gcc.
-AppleClang est installé avec les [Command Line Tools for Xcode](https://download.developer.apple.com/Developer_Tools/Command_Line_Tools_for_Xcode_12.2/Command_Line_Tools_for_Xcode_12.2.dmg)
+AppleClang est installé avec les [Command Line Tools for Xcode](https://download.developer.apple.com/Developer_Tools/Command_Line_Tools_for_Xcode_12.2/Command_Line_Tools_for_Xcode_12.2.dmg).
 
-Suivez ces instructions : https://code.visualstudio.com/docs/cpp/config-clang-mac.
+Suivez ces instructions pour installer compilateur, débogueur, Visual Studio Code et l'extension `C/C++` : https://code.visualstudio.com/docs/cpp/config-clang-mac.
 
 ### Instructions pour Linux
 
 C'est la configuration la plus facile.
-Il n'y a qu'à installer le compilateur et débogueur s'ils n'y sont pas déjà.
+Il n'y a qu'à installer le compilateur et débogueur à l'invite de commande s'ils n'y sont pas déjà.
 
-Suivez ces instructions : https://code.visualstudio.com/docs/cpp/config-linux.
+Suivez ces instructions pour installer compilateur, débogueur, Visual Studio Code et l'extension `C/C++` : https://code.visualstudio.com/docs/cpp/config-linux.
 
 ## GitHub et votre premier dépôt
 
