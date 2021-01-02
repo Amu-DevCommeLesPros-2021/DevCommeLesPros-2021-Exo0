@@ -94,6 +94,10 @@ Pour toutes ces instructions, si vous travaillez sous Windows+WSL, suivez les in
     - Suivez ces instructions-ci pour partager la clé publique avec GitHub : https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account.
     - Générez une clé par compte/ordinateur.
     P. ex. si vous travaillerez de votre propre ordinateur et de votre compte universitaire, il vous faudra deux clés.
+1. Configurez `git` localement avec votre nom et votre adresse mail :
+    - `$ git config --global user.name “Nom Prénom”`
+    - `$ git config --global user.email [votre adresse mail]`
+    - Encore une fois, opérez cette configuration sur chaque ordinateur où vous travaillerez.
 1. Créez votre propre copie de [ce dépôt](https://github.com/thierryseegers/DevCommeLesPros-2021-Exo0) que vous lisez présentement en l'utilisant comme modèle.
     - Suivez ces instructions : https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template.
         - Vous pouvez gardez le même nom de dépôt que celui-ci.
