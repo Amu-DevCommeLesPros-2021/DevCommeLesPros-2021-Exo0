@@ -17,11 +17,12 @@ Modèle de départ servant à la mise en place des outils de travail pour ce cou
 
 ## Objectif
 
-Ces instructions vont vous servir à installer et configurer [Visual Studio Code](https://code.visualstudio.com).
+Ces instructions vont vous servir à installer et configurer [Visual Studio Code](https://code.visualstudio.com) sur votre propre ordinateur.
 Code est un programme qui sert d'environnement de dévelopement.
 C'est une collection d'outils propres à la programmation.
 Principalement, c'est un navigateur de fichiers, un éditeur de texte et une interface de débogage et, accessoirement, encore bien d'autres choses.
 Code pourra vous servir ultérieurement dans le contexte d'autres cours de programmation.
+Code est aussi déjà installé sur les ordinateurs de l'université.
 
 Vous aurez aussi à créer un compte sur [GitHub](https://github.com), le service d'hébergement de dépôts de code que nous utiliserons pour ce cours.
 Une fois fait, vous procéderez à créer votre premier dépôt.
@@ -29,13 +30,13 @@ Une fois fait, vous procéderez à créer votre premier dépôt.
 ## Installation de Visual Studio Code pour le développement C et C++
 
 Visual Studio Code est disponible pour tout les systèmes d'exploitation majeurs et son interface est la même partout.
-Cette uniformité est utile dans le contexte d'enseignement mais je veux que vous puissiez tous tout de même utiliser l'ordinateur que vous avez déjà.
+Cette uniformité m'est utile dans un contexte d'enseignement mais je veux que vous puissiez tous tout de même utiliser l'ordinateur que vous avez déjà.
 
 Par contre, Code est un environnement de programmation qui est au départ indépendant du langage de programmation utilisé et ne peut compiler un programme en C par soi-même.
 On doit donc aussi installer un compilateur (comme `gcc` avec lequel vous êtes déjà familier) et Code y fera appel.
 L'installation du compilateur diffère dépendamment de votre système d'exploitation.
 
-Personnellement, je compile et teste vos programmes sous Debian (la  distribution Linux que l'on retrouve sur les ordinateurs de l'université) et le compilateur `gcc`.
+Personnellement, je compile et teste vos programmes sous Debian (la «distro» Linux que l'on retrouve sur les ordinateurs de l'université) et le compilateur `gcc`.
 
 Suivez les instructions qui correspondent à votre situation :
 
@@ -46,7 +47,11 @@ En mots très simples, WSL est une machine virtuelle qui vous donnera une vue de
 On peut naviguer ses fichiers et lancer des programmes propres à Linux à l'invite de commandes UNIX classique.
 WSL vous permet donc de compiler et déboguer vos programmes avec le même `gcc` que l'on retrouve sur les ordinateurs de l'université.
 
-Suivez ces instructions pour installer WSL, compilateur, débogueur, Visual Studio Code et l'extension `C/C++` : https://code.visualstudio.com/docs/cpp/config-wsl. (Parmi les trois systèmes d'exploitations, ce sont les plus lourdes mais je crois qu'avoir une machine virtuelle Linux vous sera bénéfique.)
+Suivez ces instructions pour installer WSL, compilateur, débogueur, Visual Studio Code et l'extension `C/C++` : https://code.visualstudio.com/docs/cpp/config-wsl.
+Vous avez le choix de la «distro» Linux.
+Ubuntu est essentiellement la plus populaire.
+Debian est celle que l'université utilise.
+(Parmi les trois systèmes d'exploitations, ces instructions sont les plus lourdes mais je crois qu'avoir une machine virtuelle Linux vous sera bénéfique.)
 
 ### Instructions pour macOS
 
