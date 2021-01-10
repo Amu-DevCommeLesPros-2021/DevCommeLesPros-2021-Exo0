@@ -29,7 +29,7 @@ Une fois fait, vous procéderez à créer votre premier dépôt.
 
 ## Installation de Visual Studio Code pour le développement C et C++
 
-Visual Studio Code est disponible pour tout les systèmes d'exploitation majeurs et son interface est la même partout.
+Visual Studio Code est disponible pour tous les systèmes d'exploitation majeurs et son interface est la même partout.
 Cette uniformité m'est utile dans un contexte d'enseignement mais je veux que vous puissiez tous tout de même utiliser l'ordinateur que vous avez déjà.
 
 Par contre, Code est un environnement de programmation qui est au départ indépendant du langage de programmation utilisé et ne peut compiler un programme en C par soi-même.
@@ -47,7 +47,7 @@ En mots très simples, WSL est une machine virtuelle qui vous donnera une vue de
 On peut naviguer ses fichiers et lancer des programmes propres à Linux à l'invite de commandes UNIX classique.
 WSL vous permet donc de compiler et déboguer vos programmes avec le même `gcc` que l'on retrouve sur les ordinateurs de l'université.
 
-Suivez ces instructions pour installer WSL, compilateur, débogueur, Visual Studio Code et l'extension `C/C++` : https://code.visualstudio.com/docs/cpp/config-wsl.
+Suivez [ces instructions](https://code.visualstudio.com/docs/cpp/config-wsl) pour installer WSL, compilateur, débogueur, Visual Studio Code et l'extension `C/C++`.
 Vous avez le choix de la «distro» Linux.
 Ubuntu est essentiellement la plus populaire.
 Debian est celle que l'université utilise.
@@ -59,14 +59,14 @@ Le compilateur C, C++ (et autres) d'Apple est AppleClang qui est une [fourche](h
 Clang est un compilateur qui se garde compatible avec gcc.
 AppleClang est installé avec les [Command Line Tools for Xcode](https://download.developer.apple.com/Developer_Tools/Command_Line_Tools_for_Xcode_12.2/Command_Line_Tools_for_Xcode_12.2.dmg).
 
-Suivez ces instructions pour installer compilateur, débogueur, Visual Studio Code et l'extension `C/C++` : https://code.visualstudio.com/docs/cpp/config-clang-mac.
+Suivez [ces instructions](https://code.visualstudio.com/docs/cpp/config-clang-mac) pour installer compilateur, débogueur, Visual Studio Code et l'extension `C/C++`.
 
 ### Instructions pour Linux
 
 C'est la configuration la plus facile.
 Il n'y a qu'à installer le compilateur et débogueur à l'invite de commande s'ils n'y sont pas déjà.
 
-Suivez ces instructions pour installer compilateur, débogueur, Visual Studio Code et l'extension `C/C++` : https://code.visualstudio.com/docs/cpp/config-linux.
+Suivez [ces instructions](https://code.visualstudio.com/docs/cpp/config-linux) pour installer compilateur, débogueur, Visual Studio Code et l'extension `C/C++`.
 
 ## GitHub et votre premier dépôt
 
@@ -95,8 +95,8 @@ Pour toutes ces instructions, si vous travaillez sous Windows+WSL, suivez les in
 1. Créez un compte GitHub.
     - http://github.com/join
 1. Créez une clé SSH, ajoutez-la au `ssh-agent` et notifiez GitHub.
-    - Suivez ces instructions pour créer les clés publique et privée et les ajouter à un agent : https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent.
-    - Suivez ces instructions-ci pour partager la clé publique avec GitHub : https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account.
+    - Suivez [ces instructions](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) pour créer les clés publique et privée et les ajouter à un agent.
+    - Suivez [ces instructions-ci](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account) pour partager la clé publique avec GitHub.
     - Générez une clé par compte/ordinateur.
     P. ex. si vous travaillerez de votre propre ordinateur et de votre compte universitaire, il vous faudra deux clés.
 1. Configurez `git` localement avec votre nom et votre adresse mail :
@@ -104,15 +104,15 @@ Pour toutes ces instructions, si vous travaillez sous Windows+WSL, suivez les in
     - `$ git config --global user.email [votre adresse mail]`
     - Encore une fois, opérez cette configuration sur chaque ordinateur où vous travaillerez.
 1. Créez votre propre copie de [ce dépôt](https://github.com/Amu-DevCommeLesPros-2021/DevCommeLesPros-2021-Exo0) que vous lisez présentement en l'utilisant comme modèle.
-    - Suivez ces instructions : https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template.
+    - Suivez [ces instructions](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
         - Vous pouvez gardez le même nom de dépôt que celui-ci.
         - Choisissez l'option `Private` à l'étape 5.
-    - Attention : il ne s'agit pas de créer un tout nouveau dépôt ou de faire une [fourche](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo) ! Pour tout les exercices, celui-ci inclus, vous utiliserez mes dépôts comme point de départ avec leurs fichiers avec la fonctionalité «Use this template» («Utiliser ce modèle»).
+    - Attention : il ne s'agit pas de créer un tout nouveau dépôt ou de faire une [fourche](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo) ! Pour tous les exercices, celui-ci inclus, vous utiliserez mes dépôts comme point de départ avec leurs fichiers avec la fonctionalité «Use this template» («Utiliser ce modèle»).
 1. Ajoutez le professeur comme collaborateur à votre dépôt.
-    - Suivez ces instructions : https://docs.github.com/en/free-pro-team@latest/github/setting-up-and-managing-your-github-user-account/inviting-collaborators-to-a-personal-repository
+    - Suivez [ces instructions](https://docs.github.com/en/free-pro-team@latest/github/setting-up-and-managing-your-github-user-account/inviting-collaborators-to-a-personal-repository).
         - Nom d'utilisateur à ajouter : `thierryseegers`.
 1. Clonez votre dépôt vers votre espace de travail local.
-    - Suivez ces instructions : https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository
+    - Suivez [ces instructions](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
         - À l'étape 3, choisissez «Use SSH».
     - Attention à ne pas cloner https://github.com/Amu-DevCommeLesPros-2021/DevCommeLesPros-2021-Exo0 mais bien votre propre dépôt nouvellement créé.
 1. Lancez Visual Studio Code.
