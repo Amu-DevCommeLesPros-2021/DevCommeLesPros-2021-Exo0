@@ -103,7 +103,7 @@ Pour toutes ces instructions, si vous travaillez sous Windows+WSL, suivez les in
     - `$ git config --global user.name “Nom Prénom”`
     - `$ git config --global user.email [votre adresse mail]`
     - Encore une fois, opérez cette configuration sur chaque ordinateur où vous travaillerez.
-1. Créez votre propre copie de [ce dépôt](https://github.com/thierryseegers/DevCommeLesPros-2021-Exo0) que vous lisez présentement en l'utilisant comme modèle.
+1. Créez votre propre copie de [ce dépôt](https://github.com/Amu-DevCommeLesPros-2021/DevCommeLesPros-2021-Exo0) que vous lisez présentement en l'utilisant comme modèle.
     - Suivez ces instructions : https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template.
         - Vous pouvez gardez le même nom de dépôt que celui-ci.
         - Choisissez l'option `Private` à l'étape 5.
@@ -114,7 +114,7 @@ Pour toutes ces instructions, si vous travaillez sous Windows+WSL, suivez les in
 1. Clonez votre dépôt vers votre espace de travail local.
     - Suivez ces instructions : https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository
         - À l'étape 3, choisissez «Use SSH».
-    - Attention à ne pas cloner https://github.com/thierryseegers/DevCommeLesPros-2021-Exo0 mais bien votre propre dépôt nouvellement créé.
+    - Attention à ne pas cloner https://github.com/Amu-DevCommeLesPros-2021/DevCommeLesPros-2021-Exo0 mais bien votre propre dépôt nouvellement créé.
 1. Lancez Visual Studio Code.
     - À l'invite de commandes :
         - `$ cd [nom de votre dépôt]`
